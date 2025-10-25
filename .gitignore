@@ -1,0 +1,24 @@
+cat > .gitignore <<'EOF'
+# Ignore data folders
+data/
+local_refs/
+MEVISdraw1_0_5_2025_Linux/
+
+# Ignore research papers and manuals
+*.pdf
+
+# Ignore environment files and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.env/
+.venv/
+fraunhofer/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+EOF
