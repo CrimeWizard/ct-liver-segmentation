@@ -1,13 +1,39 @@
-cat > .gitignore <<'EOF'
-# Ignore data folders
+# ============================================================
+# MEVIS Project .gitignore
+# ============================================================
+
+# --- Data and local refs ---
 data/
 local_refs/
 MEVISdraw1_0_5_2025_Linux/
 
-# Ignore research papers and manuals
+# --- Ignore research papers, manuals, datasets ---
 *.pdf
 
-# Ignore environment files and caches
+# --- Model checkpoints (large files) ---
+code/checkpoints/
+!code/checkpoints/README.md     # keep placeholder/readme
+
+# --- Training logs and metrics ---
+code/logs/
+!code/logs/README.md
+
+# --- Figures, intermediate results, arrays, and outputs ---
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.gif
+*.svg
+
+# --- Environment, caches, and compiled Python ---
 __pycache__/
 *.pyc
 *.pyo
@@ -17,8 +43,25 @@ __pycache__/
 .venv/
 fraunhofer/
 .ipynb_checkpoints/
-.DS_Store
-Thumbs.db
+nohup.out
+*.log
+*.out
+*.bak
+*.swp
+
+# --- IDE and system files ---
 .vscode/
 .idea/
-EOF
+.DS_Store
+Thumbs.db
+
+# --- Keep important documentation ---
+!docs/
+!*.md
+!*.txt
+!*.yml
+!*.yaml
+
+# ============================================================
+# End of MEVIS Project .gitignore
+# ============================================================
