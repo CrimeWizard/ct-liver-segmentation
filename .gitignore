@@ -20,6 +20,9 @@ code/logs/
 
 # --- Figures, intermediate results, arrays, and outputs ---
 *.npy
+*.nii.gz
+*.nii
+*.gz
 *.npz
 *.pt
 *.pth
