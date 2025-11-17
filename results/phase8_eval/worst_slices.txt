@@ -1,0 +1,10 @@
+volume_23_303.nii	LiverDice=0.8060	TumorDice=0.0000
+volume_23_302.nii	LiverDice=0.8080	TumorDice=0.0000
+volume_23_301.nii	LiverDice=0.8217	TumorDice=0.0000
+volume_23_300.nii	LiverDice=0.7984	TumorDice=0.0000
+volume_23_299.nii	LiverDice=0.8042	TumorDice=0.0000
+volume_23_298.nii	LiverDice=0.8049	TumorDice=0.0000
+volume_23_297.nii	LiverDice=0.7935	TumorDice=0.0000
+volume_23_296.nii	LiverDice=0.8062	TumorDice=0.0000
+volume_23_295.nii	LiverDice=0.8027	TumorDice=0.0000
+volume_23_306.nii	LiverDice=0.7926	TumorDice=0.0000

@@ -1,0 +1,17 @@
+Phase 8 evaluation summary
+
+Liver Dice:
+  count: 6162
+  mean: 0.7149999088786765
+  median: 0.7978015953395775
+  std: 0.22094246186366073
+  min: 0.0
+  max: 0.955424326080797
+
+Tumor Dice:
+  count: 6162
+  mean: 0.0029015316463868093
+  median: 0.0
+  std: 0.021915520766101412
+  min: 0.0
+  max: 0.3204419880650774
