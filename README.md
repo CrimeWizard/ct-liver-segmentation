@@ -40,6 +40,49 @@ This project contains:
 
 ---
 
+# 📸 Example Liver Segmentation
+
+### 🖼 Input → Ground Truth → Prediction  
+<div align="center">
+  <img src="docs/figures/phase3_predictions/volume_50_119_overlay.png" width="90%">
+</div>
+
+This shows a full slice with the original CT, GT liver mask, and predicted liver mask.
+
+---
+
+# 📈 Training Curve (Phase 3 – Liver Model)
+
+<div align="center">
+  <img src="docs/figures/phase3_dice_curve.png" width="70%">
+</div>
+
+Validation Dice rises steadily → confirms the liver U-Net trained successfully.
+
+---
+
+# 📊 Liver Segmentation Performance
+
+### Liver Dice Histogram  
+<div align="center">
+  <img src="results/phase8_eval/liver_dice_hist.png" width="70%">
+</div>
+
+Performance concentrates in the 0.75–0.90 range, with few low-Dice outliers.
+
+---
+
+# ❌ Tumor Segmentation Metrics (Documented Failure)
+
+### Tumor Dice Histogram  
+<div align="center">
+  <img src="results/phase8_eval/tumor_dice_hist.png" width="70%">
+</div>
+
+Most slices score near 0 → the model failed to learn meaningful tumor features.
+
+---
+
 ## 🚀 Pipeline Architecture (8 Phases)
 
 ### **Phase 1 — Dataset preparation**  
@@ -68,15 +111,14 @@ Dice metrics, slice detection statistics, best/worst slices, plots, and CSV summ
 
 ---
 
-## ✅ Liver Segmentation Results (successful)
+## 🧠 What Worked Well
 
-| Metric | Value |
-|--------|--------|
-| **Mean Dice** | **0.715** |
-| Median | 0.798 |
-| Max | 0.955 |
-
-The liver model is stable, consistent, and performs well across the dataset.
+- Reliable liver segmentation  
+- Fully functional 8-phase cascade  
+- Slice-level and case-level evaluation  
+- Clean NIfTI-based workflow  
+- Best/worst slice identification  
+- Reproducible and well-organized codebase  
 
 ---
 
@@ -98,17 +140,6 @@ Despite multiple training attempts, the tumor model did not converge due to:
 - ROI cropping edge cases  
 
 This failure is documented transparently in the final report.
-
----
-
-## 🧠 What Worked Well
-
-- Reliable liver segmentation  
-- Fully functional 8-phase cascade  
-- Slice-level and case-level evaluation  
-- Clean NIfTI-based workflow  
-- Best/worst slice identification  
-- Reproducible and well-organized codebase  
 
 ---
 
@@ -137,4 +168,3 @@ These changes should significantly improve tumor detection capability.
 - nibabel  
 - pandas  
 - matplotlib  
-
