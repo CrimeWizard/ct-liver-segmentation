@@ -155,6 +155,19 @@ This failure is documented transparently in the final report.
 
 ---
 
+# 🧭 MEVIS Draw (Tool Exploration)
+
+I also tried using **MEVIS Draw**, the medical imaging annotation tool developed by Fraunhofer MEVIS.  
+I explored loading CT volumes and viewing slices, but I wasn't yet able to fully operate the tool.  
+Even this brief attempt showed me how complex real annotation workflows are, and it made me more
+interested in learning MEVIS Draw properly in the future.
+
+<div align="center">
+  <img src="docs/figures/mevis_draw_use_attempt.jpeg" width="75%">
+</div>
+
+---
+
 ## 🔮 Future Work  
 _(planned once I have access to a stronger GPU)_
 
