@@ -1,0 +1,2 @@
+total_slices,gt_tumor_slices,predicted_tumor_slices,missed_tumor_slices,detected_gt_tumor_slices,detection_rate_percent
+6162,2093,2279,1382,711,33.97037744863832

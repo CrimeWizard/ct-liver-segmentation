@@ -1,42 +1,50 @@
 # ============================================================
-# MEVIS Project .gitignore
+# Project .gitignore — Cascaded Liver & Tumor Segmentation
 # ============================================================
 
-# --- Data and local refs ---
+# --- Data and local refs (not tracked) ---
 data/
 local_refs/
 MEVISdraw1_0_5_2025_Linux/
 
-# --- Ignore research papers, manuals, datasets ---
+# --- Ignore research papers, manuals, external PDFs ---
 *.pdf
 
-# --- Model checkpoints (large files) ---
+# --- Model checkpoints ---
 code/checkpoints/
-!code/checkpoints/README.md     # keep placeholder/readme
+!code/checkpoints/README.md
 
-# --- Training logs and metrics ---
+# --- Training logs ---
 code/logs/
 !code/logs/README.md
 
-# --- Figures, intermediate results, arrays, and outputs ---
-*.npy
+# --- Medical imaging files (large, private) ---
 *.nii.gz
 *.nii
 *.gz
+
+# --- Arrays, weights, binary outputs ---
+*.npy
 *.npz
 *.pt
 *.pth
 *.ckpt
 *.onnx
-*.csv
-*.png
+
+# --- Ignore PNGs ONLY in this folder ---
+code/cascade_results/*.png
+
+# --- Allow PNGs everywhere else ---
+!*.png
+
+# --- Other image formats (ignore everywhere) ---
 *.jpg
 *.jpeg
 *.tiff
 *.gif
 *.svg
 
-# --- Environment, caches, and compiled Python ---
+# --- Python cache and environments ---
 __pycache__/
 *.pyc
 *.pyo
@@ -46,19 +54,21 @@ __pycache__/
 .venv/
 fraunhofer/
 .ipynb_checkpoints/
+
+# --- Logs & temp files ---
 nohup.out
 *.log
 *.out
 *.bak
 *.swp
 
-# --- IDE and system files ---
+# --- IDE / OS metadata ---
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# --- Keep important documentation ---
+# --- Keep documentation ---
 !docs/
 !*.md
 !*.txt
@@ -66,5 +76,9 @@ Thumbs.db
 !*.yaml
 
 # ============================================================
-# End of MEVIS Project .gitignore
+# End of .gitignore
 # ============================================================
+code/cascade_results/
+code/docs/figures/phase4_uncertainty/
+code/*.png
+code/**/*.png
