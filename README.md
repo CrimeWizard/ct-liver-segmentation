@@ -104,7 +104,7 @@ Standardized filenames, validated orientations, checked spacing and shapes.
 HU clipping, normalization, resampling, empty-slice filtering.
 
 ### **Phase 3 — Liver U-Net training**  
-2D U-Net using BCE + Dice loss at 384×384 resolution.
+2D U-Net using BCE + Dice loss at 256×256 resolution.
 
 ### **Phase 4 — Liver inference**  
 Full CT inference with largest connected-component filtering.
@@ -151,7 +151,9 @@ Despite multiple training attempts, the tumor model did not converge due to:
 - shallow 2D architecture  
 - ROI cropping edge cases  
 
-This failure is documented transparently in the final report.
+This failure is documented transparently in "/docs/final_report.md".
+
+Summary: Tumor segmentation failed due to dataset size, GPU limits, and extreme class imbalance. This is expected and documented clearly in the report.
 
 ---
 
