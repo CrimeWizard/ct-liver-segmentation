@@ -77,7 +77,7 @@ Performance concentrates in the 0.75–0.90 range, with few low-Dice outliers.
 This shows the pipeline output after liver segmentation and ROI extraction.
 
 <div align="center">
-  <img src="docs/figures/volume_4_478.png" width="90%">
+  <img src="docs/figures/volume_6_398.png" width="90%">
 </div>
 
 The liver mask is used to crop the region of interest, which feeds into the tumor-stage model.
